@@ -28,6 +28,7 @@ ifdef USE_LIBKRW
 	#kerninfra_FRAMEWORKS += kerninfra/libkrw
 	kerninfra_LIBRARIES += krw
 	kerninfra_LDFLAGS += -Lrw_prov/rw_prov_libkrw/libkrw
+	kerninfra_LDFLAGS += -L/var/jb/usr/lib
 	kerninfra_FILES += rw_prov/rw_prov_libkrw/rw_prov_libkrw.c
 	kerninfra_CFLAGS += -DUSE_LIBKRW
 endif
